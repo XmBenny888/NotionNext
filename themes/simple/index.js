@@ -12,6 +12,8 @@ import { createContext, useContext, useEffect, useRef } from 'react'
 import BlogPostBar from './components/BlogPostBar'
 import CONFIG from './config'
 import { Style } from './style'
+import Hero from './components/Hero'
+import ServicePillars from './components/ServicePillars'
 
 const AlgoliaSearchModal = dynamic(
   () => import('@/components/AlgoliaSearchModal'),
@@ -140,7 +142,13 @@ const LayoutBase = props => {
  * @returns
  */
 const LayoutIndex = props => {
-  return <LayoutPostList {...props} />
+  return (
+    <>
+      <Hero {...props} />
+      <ServicePillars {...props} />
+      <LayoutPostList {...props} />
+    </>
+  )
 }
 /**
  * 博客列表

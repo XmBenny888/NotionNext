@@ -18,5 +18,17 @@ const CONFIG = {
   SIMPLE_MENU_TAG: true, // 显示标签
   SIMPLE_MENU_ARCHIVE: true, // 显示归档
   SIMPLE_MENU_SEARCH: true // 显示搜索
+
+  // Hero区域配置
+  SIMPLE_HERO_CONFIG: {
+    title: 'Professional Patient Care',
+    subtitle: 'Compassion in Action, Health in Focus',
+    description: 'We provide expert, reliable, and empathetic care to enhance the quality of life for every client.',
+    buttonText: 'Explore Our Services',
+    buttonLink: '/services'
+  },
+
+  // 服务卡片配置
+  SIMPLE_SERVICE_PILLARS: true,
 }
 export default CONFIG
