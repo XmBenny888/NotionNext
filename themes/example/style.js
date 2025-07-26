@@ -5,13 +5,30 @@
  * @returns
  */
 const Style = () => {
-  return <style jsx global>{`
+  return <style jsx global>{
     // 底色
     .dark body{
         background-color: black;
     }
-
-  `}</style>
+    
+    // 添加字体定义
+    :root {
+      --font-sans: 'Inter', system-ui, sans-serif;
+      --font-display: 'Montserrat', sans-serif;
+    }
+    
+    body {
+      font-family: var(--font-sans);
+      line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+  }</style>
 }
 
 export { Style }

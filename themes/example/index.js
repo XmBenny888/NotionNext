@@ -60,6 +60,7 @@ const LayoutBase = props => {
           className={`relative mx-auto justify-center md:flex py-8 px-2
           ${LAYOUT_SIDEBAR_REVERSE ? 'flex-row-reverse' : ''} 
           ${LAYOUT_VERTICAL ? 'items-center flex-col' : 'items-start'} 
+          max-w-6xl  // 添加最大宽度限制
           `}>
           {/* 内容 */}
           <div

@@ -26,3 +26,11 @@ export const Header = props => {
     </header>
   )
 }
+
+<Link
+  href="/"
+  className="menu-link inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-blue-500 dark:text-gray-300 dark:hover:text-white transition-all duration-200"
+  // 添加过渡动画
+>
+{siteConfig('TITLE')}
+</Link>
