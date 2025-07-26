@@ -13,7 +13,8 @@ import BlogPostBar from './components/BlogPostBar'
 import CONFIG from './config'
 import { Style } from './style'
 import Hero from './components/Hero'
-import ServicePillars from './components/ServicePillars'
+// 移除不存在的组件导入
+// import ServicePillars from './components/ServicePillars'
 
 const AlgoliaSearchModal = dynamic(
   () => import('@/components/AlgoliaSearchModal'),
@@ -145,7 +146,8 @@ const LayoutIndex = props => {
   return (
     <>
       <Hero {...props} />
-      <ServicePillars {...props} />
+      {/* 移除不存在的组件调用 */}
+      {/* <ServicePillars {...props} /> */}
       <LayoutPostList {...props} />
     </>
   )

@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { useGlobal } from '@/lib/global'
 
 export default function Hero() {
-  const { pageData } = useGlobal()
+  // 删除未使用的pageData变量
+  // const { pageData } = useGlobal()
   const heroConfig = siteConfig('SIMPLE_HERO_CONFIG') || {
     title: 'Professional Patient Care',
     subtitle: 'Compassion in Action, Health in Focus',
@@ -12,8 +13,24 @@ export default function Hero() {
     buttonLink: '/services'
   }
 
+  // 添加配置参数验证
+  if (typeof heroConfig !== 'object' || heroConfig === null) {
+    heroConfig = {
+      title: 'Professional Patient Care',
+      subtitle: 'Compassion in Action, Health in Focus',
+      description: 'We provide expert, reliable, and empathetic care to enhance the quality of life for every client.',
+      buttonText: 'Explore Our Services',
+      buttonLink: '/services'
+    };
+  }
+
+  // 确保链接格式正确
+  if (!heroConfig.buttonLink || typeof heroConfig.buttonLink !== 'string') {
+    heroConfig.buttonLink = '/services';
+  }
+
   return (
-    <section className="py-16 md:py-24 bg-blue-50 dark:bg-blue-900/20">
+    <section className="py-12 md:py-24 bg-blue-50 dark:bg-blue-900/20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-white mb-4">
