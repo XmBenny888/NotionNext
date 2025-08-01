@@ -67,9 +67,9 @@ export const Header = props => {
 
               {/* 右侧功能 */}
               <div className='flex items-center gap-4 justify-end pr-16 lg:pr-0'>
-                {/* 深色模式切换 */}
-                <DarkModeButton />
-                {/* 注册登录功能 */}
+               // {/* 深色模式切换 */}
+               // <DarkModeButton />
+              //  {/* 注册登录功能 */}
                // {enableClerk && (
                 //  <>
                  //   <SignedOut>
@@ -88,7 +88,7 @@ export const Header = props => {
                   //  </SignedOut>
                   //  <SignedIn>
                     //  <UserButton />
-                     <DashboardButton className={'hidden md:block'} />
+                   //  <DashboardButton className={'hidden md:block'} />
                  //   </SignedIn>
               //    </>
              //   )}
@@ -105,7 +105,7 @@ export const Header = props => {
                 //      {siteConfig('STARTER_NAV_BUTTON_2_TEXT')}
               //      </Link>
               // </div>
-                )}
+              //  )}
               </div>
             </div>
           </div>
