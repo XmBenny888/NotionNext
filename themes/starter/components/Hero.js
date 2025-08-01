@@ -19,14 +19,14 @@ export const Hero = props => {
           <div className='-mx-4 flex flex-wrap items-center'>
             <div className='w-full px-4'>
               <div
-                className='hero-content wow fadeInUp mx-auto max-w-[1080px] text-center'
+                className='hero-content wow fadeInUp mx-auto max-w-[1200px] text-center'
                 data-wow-delay='.2s'>
                 {/* 主标题 */}
                 <h1 className='mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]'>
                   {siteConfig('STARTER_HERO_TITLE_1', null, config)}
                 </h1>
                 {/* 次标题 */}
-                <p className='mx-auto mb-9 max-w-[800px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]'>
+                <p className='mx-auto mb-9 max-w-[800px] text-lg font-medium text-white sm:text-xl sm:leading-[1.44]'>
                   {siteConfig('STARTER_HERO_TITLE_2', null, config)}
                 </p>
                 {/* 按钮组 */}
