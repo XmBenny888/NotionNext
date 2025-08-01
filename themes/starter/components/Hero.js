@@ -26,7 +26,7 @@ export const Hero = props => {
                   {siteConfig('STARTER_HERO_TITLE_1', null, config)}
                 </h1>
                 {/* 次标题 */}
-                <p className='mx-auto mb-9 max-w-[800px] text-lg font-medium text-white sm:text-xl sm:leading-[1.44]'>
+                <p className='mx-auto mb-9 max-w-[1080px] text-lg font-medium text-white sm:text-xl sm:leading-[1.44]'>
                   {siteConfig('STARTER_HERO_TITLE_2', null, config)}
                 </p>
                 {/* 按钮组 */}
