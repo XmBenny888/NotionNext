@@ -39,7 +39,7 @@ export const Blog = ({ posts }) => {
                   <div
                     className='wow fadeInUp group mb-10'
                     data-wow-delay='.1s'>
-                    <div className='mb-8 overflow-hidden rounded-[15px]'>
+                    <div className='mb-8 overflow-hidden rounded-[2xl]'>
                       {item.pageCoverThumbnail && (
                         <Link href={item?.href} className='block'>
                           <img
